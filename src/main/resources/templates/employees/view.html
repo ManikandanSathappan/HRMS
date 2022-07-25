@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>Employee Management System</title>
+</head>
+
+<body>
+
+<div class="container">
+	<br>
+	<div class="p-3 mb-2 bg-info text-white">
+		<div class="row">
+			<h3 class="font-weight-bold ml-3">Employee Management System</h3>
+			<a th:href="@{/security/logout}" class="btn btn-info my-sm-0 mr-4 ml-auto font-weight-bold" style="float: right;">
+				Logout
+			</a>
+		</div>
+	</div>
+
+	
+	
+
+
+<table  class = "table table-striped table-bordered table-column" style=margin-top:1rem>
+<tr>
+<th> Employee Id</th>
+<td th:text="${employee.id}"/>
+</tr>
+<tr>
+<th> First Name</th>
+<td th:text="${employee.firstName}"/>
+</tr>
+<tr>
+<th> Last Name</th>
+<td th:text="${employee.lastName}"/>
+</tr>
+<tr>
+<th> Job Title</th>
+<td th:text="${employee.jobTitle}"/>
+</tr>
+<tr>
+<th> Department </th>
+<td th:text="${employee.department}"/>
+</tr>
+<tr>
+<th> Email </th>
+<td th:text="${employee.email}"/>
+</tr>
+
+
+</tr>
+</tbody>
+
+</table>
+
+
+</div>
+
+</body>
+
+</html>
